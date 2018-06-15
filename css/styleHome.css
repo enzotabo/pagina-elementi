@@ -120,15 +120,13 @@
     z-index: 99;
 }
 
-@media (max-width: 1023px){}
+
 .btn-nav-wrapper {
     height: 72px;
     width: 72px;
-}}
+}
 
 .btn-nav-wrapper {
-    width: 80px;
-    height: 80px;
     position: relative;
     cursor: pointer;
     display: block;
@@ -147,7 +145,7 @@
     height: 18px;
     position: absolute;
     top: 50%;
-    left: 17%;
+    left: 50%;
     transform: translate(-50%,-50%);
     cursor: pointer;
 	color: inherit;
