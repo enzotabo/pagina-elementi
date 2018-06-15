@@ -1,0 +1,59 @@
+body{
+	background-color: #E6F5F7;
+	overflow: hidden;
+}
+
+#q1{
+	background-color: #9FE3DD;
+}
+
+#q2{
+	background-color: #51BFB5;
+}
+
+#q3{
+	background-color: #11625B;
+}
+
+#q4{
+	background-color: #004843;
+}
+
+.quadrato{
+	width: 20vh;
+	height: 20vh;
+	position: absolute;
+}
+
+.pos1{
+	left: 0%; top: 0%;
+}
+
+.pos2{
+	right: 0%; top: 0%;
+}
+
+.pos3{
+	left: 0%; bottom: 0%;
+}
+
+.pos4{
+	right: 0%; bottom: 0%;
+}
+
+.centro{
+	left: 50%; top: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.oscilla{
+	animation: muovi 4s infinite linear;
+}
+
+@keyframes muovi{
+	0% {left: 50%;}
+	25% {left: 25%;}
+	50% {left: 50%;}
+	75% {left: 75%;}
+	100% {left: 50%;}
+}

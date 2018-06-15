@@ -1,0 +1,99 @@
+body{
+	background-color: #1B3440
+}
+
+.forma{
+	width: 1.2vh; height: 4.5vh;
+	background-color: #B4D6C6;
+	position: absolute;
+}
+
+.pos1{
+	left: 48%; top: 50%;
+	transform: translate(-48%,-50%);
+}
+
+.pos2{
+	left: 49%; top: 50%;
+	transform: translate(-49%,-50%);
+}
+
+.pos3{
+	left: 50%; top: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.pos4{
+	left: 51%; top: 50%;
+	transform: translate(-51%,-50%);
+}
+
+.pos5{
+	left: 52%; top: 50%;
+	transform: translate(-52%,-50%);
+}
+
+.allunga1{
+	animation: allungamento1 1s infinite ease-in-out;
+}
+
+.allunga2{
+	animation: allungamento2 1s infinite ease-in-out;
+}
+
+.allunga3{
+	animation: allungamento3 1s infinite ease-in-out;
+}
+
+.allunga4{
+	animation: allungamento4 1s infinite ease-in-out;
+}
+
+.allunga5{
+	animation: allungamento5 1s infinite ease-in-out;
+}
+
+@keyframes allungamento1{
+	0%{transform: scaleY(1);}
+	20%{transform: scaleY(2);}
+	40%{transform: scaleY(1);}
+	60%{transform: scaleY(1);}
+	80%{transform: scaleY(1);}
+	100%{transform: scaleY(1);}
+}
+
+@keyframes allungamento2{
+	0%{transform: scaleY(1);}
+	20%{transform: scaleY(1);}
+	40%{transform: scaleY(2);}
+	60%{transform: scaleY(1);}
+	80%{transform: scaleY(1);}
+	100%{transform: scaleY(1);}
+}
+
+@keyframes allungamento3{
+	0%{transform: scaleY(1);}
+	20%{transform: scaleY(1);}
+	40%{transform: scaleY(1);}
+	60%{transform: scaleY(2);}
+	80%{transform: scaleY(1);}
+	100%{transform: scaleY(1);}
+}
+
+@keyframes allungamento4{
+	0%{transform: scaleY(1);}
+	20%{transform: scaleY(1);}
+	40%{transform: scaleY(1);}
+	60%{transform: scaleY(1);}
+	80%{transform: scaleY(2);}
+	100%{transform: scaleY(1);}
+}
+
+@keyframes allungamento5{
+	0%{transform: scaleY(1);}
+	20%{transform: scaleY(1);}
+	40%{transform: scaleY(1);}
+	60%{transform: scaleY(1);}
+	80%{transform: scaleY(1);}
+	100%{transform: scaleY(2);}
+}

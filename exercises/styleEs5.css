@@ -1,0 +1,62 @@
+body{
+  overflow : hidden;
+  background-color: #D62332;
+}
+
+#q1{
+  z-index : 1;
+  background-color : #1BE8A2;
+}
+
+#c1{
+  background-color : #11365A;
+}
+
+#Conta{
+  color : #D62332;
+  font-size: 50px;
+}
+
+.formaGeom{
+  width : 20vh;
+  height : 20vh;
+  position : absolute;
+}
+
+.cerchio{
+  border-radius : 50%;
+}
+.quad{
+}
+
+.center{
+  margin-top: 10px;
+  position : absolute;
+  left : 50%;
+  top : 50%;
+  transform : translate(-50%,-50%);
+}
+
+.spostaDestra1{
+  animation : sposta1 2s forwards;
+}
+
+.spostaDestra2{
+  animation : sposta2 2s forwards;
+}
+
+@keyframes sposta1{
+  0% {left : 50%;}
+  100% {left : 105%;}
+}
+
+@keyframes sposta2{
+  0% {
+    left : -5%;
+    top : 50%;
+  }
+  100% {
+    left : 50%;
+    top : 50%;
+  }
+}

@@ -1,0 +1,78 @@
+body{
+  background-color: #71A6A1;
+}
+.quadrato{
+  width : 20vh;
+  height : 20vh;
+  }
+
+.quadratino{
+  width : 8vh;
+  height : 8vh;
+}
+
+#uno{ 
+  background-color : #F8D200;
+}
+
+.pos1{
+  position : absolute;
+  left : 0%;
+  top : 0%; 
+}
+
+#due{ 
+  background-color : #92E891;
+}
+
+.pos2{
+  position : absolute;
+  left : 100%;
+  top : 0%; 
+  transform : translate(-100%,0%)
+}
+
+#tre{ 
+  background-color : #DE5B49;
+}
+
+.pos3{
+  position : absolute;
+  left : 0%;
+  top : 100%;
+  transform : translate(0%,-100%)
+}
+
+#quattro{ 
+  background-color : #114B63;
+}
+
+.pos4{
+  position : absolute;
+  left : 100%;
+  top : 100%; 
+  transform : translate(-100%,-100%)
+}
+
+.centrato{
+  position : absolute;
+  left : 50%;
+  top : 50%;
+  transform : translate(-50%,-50%)
+}
+
+.ruota{
+  animation : rotazione 1s infinite;
+}
+
+@keyframes rotazione{
+  from {
+    transform : translate(-50%, -50%)
+                rotate(0deg);
+  }
+  to {
+    transform : translate(-50%, -50%)
+                rotate(360deg);
+  }
+}
+

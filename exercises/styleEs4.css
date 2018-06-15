@@ -1,0 +1,70 @@
+body{
+  overflow: hidden;
+  background-color: #FF8C00;
+
+}
+
+.formaGeom{
+  width : 50px;
+  height : 50px;
+}
+
+.cerchio{
+  border-radius : 50%;
+}
+
+.centrato{
+  position : absolute;
+  left : 50%;
+  top : 50%;
+  transform : translate(-50%,-50%);
+}
+
+#quadrato{
+  z-index : 100;
+  background-color : #04756F;
+}
+
+.sposta{
+  animation : spostaDestra 1s forwards
+}
+
+.compare{
+  background-color : #0A1D29;
+  animation : compare 1s forwards
+}
+
+.red{
+  background-color : #D90000;
+}
+
+.ruota{
+  animation : rotazione 1s infinite
+}
+
+@keyframes spostaDestra{
+  from {left : 50%}
+  to {
+    left : 100%;
+    transform : translate(100%,0%)
+  }
+}
+
+@keyframes compare{
+  from {left : 0%}
+  to {
+    left : 50%;
+    transform : translate(-50%,-50%)
+  }
+}
+
+@keyframes rotazione{
+  from {
+    transform : translate(-50%,-50%)
+                rotate(0deg);
+  }
+  to {
+    transform : translate(-50%,-50%)
+                rotate(360deg);
+  }
+}
