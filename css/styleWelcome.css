@@ -1,0 +1,28 @@
+body{
+	background-color: #0A1D29;
+}
+
+#hello{
+	font-family: 'Gotham SSm A','Gotham SSm   B',Gotham,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 100px;
+	color: white;
+	position: absolute;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	left: 50%; top: 45%;
+	transform: translate(-50%,-50%);
+}
+
+#hellone{
+	color: grey;
+	text-decoration: none;
+	font-size: 25px;
+	color: grey;
+	position: absolute;
+	left: 50%; top: 75%;
+	transform: translate(-50%,-75%);
+}
+
+.allunga{
+	
+}

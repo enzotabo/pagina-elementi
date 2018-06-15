@@ -1,0 +1,459 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 20; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 20%; /* 25% from the top */
+    left: 8%;
+    width: 50%; /* 100% width */
+    text-align: left; /* Centaered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    margin-left: 30px;
+    font-family: 'Roboto Black','Helvetica Neue', 'Helvetica', Arial, sans-serif;
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 50px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+    font-style: italic;
+    letter-spacing: 0.1em;
+}
+
+.overlay button {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 50px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+    font-style: italic;
+    letter-spacing: 0.1em;
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+
+/*Dropdown*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 25;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown-content{display: block;}
+
+.overlay-portfolio:hover{/*background-color: #3e8e41;*/}
+
+
+
+/*HEADER*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: block;
+}
+
+.header-bar {
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    z-index: 99;
+}
+
+@media (max-width: 1023px){}
+.btn-nav-wrapper {
+    height: 72px;
+    width: 72px;
+}}
+
+.btn-nav-wrapper {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    cursor: pointer;
+    display: block;
+}
+
+.nav-trigger {
+    display: inline-block;
+    width: 23px;
+    height: 18px;
+    position: absolute;
+    top: 50%;
+    left: 17%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+	color: inherit;
+    text-decoration: underline;
+}
+
+.nav-trigger span{
+    position: absolute;
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: #fff;
+}
+
+.nav-trigger span:nth-child(1) {
+    top: 0;
+}
+
+.nav-trigger span:nth-child(2) {
+    top: 7px;
+}
+
+.nav-trigger span:nth-child(3) {
+    top: 14px;
+}
+/*Menu Icon*/
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+/*.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}*/
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+    width: 17px;
+    height: 16px;
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+@media (max-width: 1023px){
+.logos {
+    width: 125px;
+    height: 72px;
+}}
+
+.logos {
+    width: 132px;
+    height: 72px;
+    background-color: #282E34;
+    position: relative;
+}
+
+.logos {
+    display: inline-block;
+}
+
+
+.logos span {
+    font-size: 0;
+    line-height: 0;
+    text-indent: -4004px;
+    z-index: 15;
+}
+
+.logo {
+    background: url("../img/LogoET.png") no-repeat;
+    background-size: contain;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.logo {
+    display: inline-block;
+    width: 45px;
+    height: 30px;
+    top: 50%;
+    left: 50%;
+    transition: transform .4s;
+    position: absolute;
+}
+
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+        background-attachment: scroll;
+    }
+}
+
+/*Parallax*/
+
+body, html {
+  height: 100%;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4{
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("../img/1.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("../img/2.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("../img/Exercise.jpg");
+  min-height: 400px;
+}
+
+.bgimg-4 {
+  background-image: url("../img/AboutMe.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption a.border{
+  background-color:transparent;
+  font-size:25px;color: #f7f7f7;
+  text-decoration: none;
+  font-family: 'Roboto Bold','Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  letter-spacing: 0.2em;
+}
+
+.caption span.border {
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+        background-attachment: scroll;
+    }
+}
+
+/*FOOTER*/
+  .footer{background-color:#282E34;color:#fff;}
+  .footer h3{font-size:25px;color:#d1d1d1}.footer p{font-size:15px;line-height:2.14}
+  .footer .footer__inner{display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between;padding:50px 0 50px;border-bottom:2px solid #fff}
+  .footer .footer__content{width:100%}
+  .footer .footer__content h3{padding-bottom:11px}
+  .footer .footer__aside h3{margin-bottom:5px;text-align:right}
+  .footer .footer__bar{display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between;padding:10px 17px 10px 11px}
+  .footer .footer__nav{font-size:14px;font-weight:700;margin-top:12px}
+  .footer .footer__nav ul{display:-ms-flexbox;display:flex;-ms-flex-pack:end;justify-content:flex-end}
+  .footer .footer__nav li{margin-left:27px}
+  .footer .footer__nav a{text-decoration:none;transition:color .3s}
+  .footer .footer__nav a:hover{color:#d16a0a}
+  .footer-home{}
+  @media(max-width:1023px){
+    .footer .footer__inner{margin-right:70px;margin-left:70px;padding-bottom:46px;padding-top:45px}
+    .footer h3{font-size: 20px}
+    .footer .footer__content h3{padding-bottom:0;margin-bottom:14px}
+    .footer p{font-size:13px;line-height:1.47}
+    .footer .footer__bar{display:block;text-align:center;padding-bottom:57px}
+    .footer .footer__nav ul{display:block;padding-top:10px}
+    .footer .footer__nav ul li{display:inline-block;margin:0 13px}
+    .footer-home .footer__inner{}
+    .footer .footer__content{width:70%}}
+  @media(max-width:767px){
+    .footer .footer__content h3,.footer h3{margin-bottom:9px}
+    .footer{border-width:37px}.footer h3{font-size:19px}
+    .footer p{font-size:11px}
+    .footer .footer__content{margin-bottom:30px}
+    .footer .footer__inner{display:block;text-align:center;border:0;padding-top:47px}
+    .footer .footer__aside h3{text-align:center}
+    .footer .logo-footer{display:inline-block !important;width:43px;height:17px}
+    .footer .footer__nav{font-size:11px;padding-top:0;margin-top:4px}
+    .footer .footer__nav ul li{margin:0 9px}
+    .footer .footer__bar{padding-bottom:33px;border-top:1px solid #696969}
+    .footer-home .footer__inner{padding-top:0}
+    .footer .footer__content{width:100%}}
+
+
+  .footer__content h3{
+    font-family: 'Roboto Bold','Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  }
+
+@media (max-width: 767px){
+body .shell {
+    padding: 0 20px;
+}}
+
+@media (max-width: 767px){
+body .shell {
+    padding: 0 20px;
+}}
+
+.shell {
+    max-width: 1126px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: auto;
+}
+
+.list-offices {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.list-members>ul, .list-offices {
+    display: -ms-flexbox;
+    list-style: none;
+}
+
+.list-offices li {
+    width: 40%;
+    margin-right: 2.5px;
+    margin-left: 2.5px;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.socials ul {
+    list-style: none;
+    font-size: 28px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-right: 6px;
+}
+
+@media (max-width: 1023px){
+.socials ul li {
+    font-size: 35px;
+    margin-left: 35px;
+}}
+
+.socials ul li {
+    margin-left: 22px;
+}
+
+.socials ul li a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.socials ul a i {
+    transition: color .3s;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+}
+
+.fa-facebook-official:before {
+    content: "\f230";
+}
+
+.socialButton{
+  height: 30px; width: 30px; 
+}
+
+.facebookLogo{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  left: 50%;
+  transition: transform .4s;
+  position: absolute;
+  background: url(../img/logos/facebookLogo.png) no-repeat;
+  background-size: contain;
+}

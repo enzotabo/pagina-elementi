@@ -1,0 +1,28 @@
+body{
+	background-color: #282E34;
+}
+
+.containerAboutMe{
+	background-color: #282E34;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 50px;
+	position: relative;
+}
+
+.containerAboutMe .textAbout{
+	background-color: #282E34;
+	width: 50%;
+	margin-left: 50px;
+	float: left
+}
+
+.containerAboutMe .textAbout h3{
+	text-align:right;
+	color: white;
+}
+
+.containerAboutMe img{
+	vertical-align: middle;
+	border: 0;
+}
