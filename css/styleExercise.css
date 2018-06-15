@@ -70,14 +70,16 @@ h1 {
   letter-spacing: 0.1em;
   margin-right: 2.5px;
   margin-left: 2.5px;
+  transition: 0.5s;
 }
 
 .btn:hover {
   background-color: #ddd;
 }
 
+
 .btn.active {
-  background-color: #666;
+  background-color: #71A6A1;
   color: white;
 }
 

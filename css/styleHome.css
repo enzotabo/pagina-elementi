@@ -132,6 +132,13 @@
     position: relative;
     cursor: pointer;
     display: block;
+    background-color: #282E34;
+    transition: 0.5s;
+}
+
+
+.btn-nav-wrapper:hover {
+  background-color: #114B63;
 }
 
 .nav-trigger {
@@ -186,18 +193,12 @@
     transition: 0.4s;
 }*/
 
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-    width: 17px;
-    height: 16px;
+.logos{
+  transition: 0.5s;
 }
 
-.change .bar2 {opacity: 0;}
-
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
+.logos:hover{
+  background-color: #114B63;
 }
 
 @media (max-width: 1023px){
@@ -442,18 +443,10 @@ strong {
     content: "\f230";
 }
 
-.socialButton{
-  height: 30px; width: 30px; 
+.fa{
+  transition: 0.5s;
 }
 
-.facebookLogo{
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  top: 50%;
-  left: 50%;
-  transition: transform .4s;
-  position: absolute;
-  background: url(../img/logos/facebookLogo.png) no-repeat;
-  background-size: contain;
+.fa:hover{
+  color: #71A6A1;
 }
