@@ -39,6 +39,11 @@ h1 {
     width: 33.33333333%;
 }}
 
+.columnVertVideo{
+  float: center;
+  width: 50%;
+}
+
 
 
 /* Clear floats after rows */ 

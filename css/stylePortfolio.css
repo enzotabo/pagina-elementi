@@ -1,0 +1,37 @@
+ @media only screen and (max-device-width: 1024px) {
+    .bgimg-sessionz, .bgimg-patricia, .bgimg-dw, .bgimg-4 {
+        background-attachment: scroll;
+    }
+}
+.bgimg-sessionz, .bgimg-patricia, .bgimg-dw, .bgimg-4{
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-sessionz {
+  background-image: url("../img/portfolio/sessionz/sessionz0.jpg");
+  min-height: 50%;
+}
+
+.bgimg-patricia {
+  background-image: url("../img/portfolio/patricia/patricia0.jpg");
+  min-height: 50%;
+}
+
+.bgimg-dw {
+  background-image: url("../img/portfolio/dw/dw0.jpg");
+  min-height: 50%;
+}
+
+.bgimg-4 {
+  background-image: url("../img/AboutMe.jpg");
+  min-height: 400px;
+}
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-sessionz, .bgimg-patricia, .bgimg-dw, .bgimg-4 {
+        background-attachment: scroll;
+    }
+}
