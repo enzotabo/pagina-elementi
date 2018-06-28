@@ -34,6 +34,16 @@ h1 {
     display: none; /* Hide all elements by default */
 }
 
+.columnCenter{
+  float: center;
+  display: none;
+}
+
+@media (min-width: 768px){
+.columnCenter {
+    width: 50%;
+}}
+
 @media (min-width: 768px){
 .columnEx {
     width: 33.33333333%;

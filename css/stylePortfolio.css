@@ -1,9 +1,9 @@
  @media only screen and (max-device-width: 1024px) {
-    .bgimg-sessionz, .bgimg-patricia, .bgimg-dw, .bgimg-4 {
+    .bgimg-sessionz, .bgimg-patricia, .bgimg-dw, .bgimg-snow, .bgimg-peru{
         background-attachment: scroll;
     }
 }
-.bgimg-sessionz, .bgimg-patricia, .bgimg-dw, .bgimg-4{
+.bgimg-sessionz, .bgimg-patricia, .bgimg-dw, .bgimg-snow, .bgimg-peru{
   position: relative;
   background-attachment: fixed;
   background-position: center;
@@ -26,12 +26,25 @@
   min-height: 50%;
 }
 
-.bgimg-4 {
-  background-image: url("../img/AboutMe.jpg");
-  min-height: 400px;
+.bgimg-snow {
+  background-image: url("../img/portfolio/snow/snow.jpg");
+  min-height: 50%;
+}
+
+.bgimg-peru {
+  background-image: url("../img/portfolio/peru/peru0.jpg");
+  min-height: 50%;
 }
 @media only screen and (max-device-width: 1024px) {
-    .bgimg-sessionz, .bgimg-patricia, .bgimg-dw, .bgimg-4 {
+    .bgimg-sessionz, .bgimg-patricia, .bgimg-dw, .bgimg-snow, .bgimg-peru{
         background-attachment: scroll;
     }
+}
+
+.precPort{
+	margin: 0;
+	padding: 0;
+	background-color: red;
+	top: 50%;
+	left: 0%;
 }
